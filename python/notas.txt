@@ -1,0 +1,5 @@
+-- Criar a imagem
+docker build -t friendlyhello .
+
+-- Subir o container (executar a imagem)
+docker run -p 4000:80 friendlyhello
