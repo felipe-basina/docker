@@ -168,7 +168,7 @@ INSERT INTO users_by_name
 ------------------------------------------------------
 -- DELETES A TABLE
 ------------------------------------------------------
-DROP TABLE users_by_name
+DROP TABLE users_by_name;
 
 ------------------------------------------------------
 -- CREATES A NEW TABLE
@@ -182,6 +182,7 @@ CREATE TABLE IF NOT EXISTS users_by_name (
   email       text,
   PRIMARY KEY((last_name, first_name), email)
 );
+
 INSERT INTO users_by_name
   (last_name, first_name, email)
   VALUES(
